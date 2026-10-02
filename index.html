@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8f244c">
+  <title>Pion Design Lindesberg — handsytt med färg & personlighet</title>
+  <meta name="description" content="Upptäck Pion Designs färgstarka väskor, necessärer, kuddfodral och textilier. Handsytt av Christina Bertholdson i Lindesberg. Se hela sortimentet och skicka en förfrågan.">
+  <link rel="icon" href="assets/pion-da855c7a9f29.png">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#sortiment">Till sortimentet</a>
+  <div class="announcement">Handsytt av Christina Bertholdson i Lindesberg</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Pion Design, startsida"><img src="assets/pion-da855c7a9f29.png" alt="" width="54" height="54"><span>Pion Design<small>Lindesberg</small></span></a>
+    <nav aria-label="Huvudmeny" class="desktop-nav"><a href="#sortiment">Sortiment</a><a href="#christina">Bakom Pion</a><a href="#bestallning">Så beställer du</a></nav>
+    <div class="header-actions"><button class="inquiry-trigger" type="button">Förfrågan <span class="inquiry-count">0</span></button><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Meny</button></div>
+    <nav id="mobile-nav" aria-label="Mobilmeny" hidden><a href="#sortiment">Hela sortimentet</a><a href="#christina">Bakom Pion</a><a href="#bestallning">Så beställer du</a><a href="tel:+46705408449">Ring Christina</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><h1 id="hero-title">Mönster att<br> leva <em>med.</em></h1><p>En väska att ta med. En kudde att komma hem till. Färgstarka textilier, sydda av Christina i Lindesberg.</p><a class="button button-primary" href="#sortiment">Hitta din favorit</a><a class="text-link hero-link" href="#christina">Möt händerna bakom Pion</a>
+        <div class="hero-mini"><img src="assets/pion-f50760038be5.jpg" alt="Christinas färgstarka necessärer och små väskor på en vit byrå" width="220" height="145"><div>Små saker.<br><span>Mycket personlighet.</span></div></div>
+      </div>
+      <figure class="hero-image"><img src="assets/pion-3eaf7ff23507.jpg" alt="En rosa fåtölj med en färgstark mönstrad kudde från Pion Design" width="1100" height="1100" fetchpriority="high"><figcaption><span>Färg får ta plats.</span><a href="#sortiment" data-category-link="kuddfodral">Upptäck kuddfodral</a></figcaption></figure>
+    </section>
+    <div class="signature-strip"><span>Syglädje från Lindesberg</span><span>Mönster med historia</span><span>Skapat för att användas</span></div>
+
+    <section class="catalog-section section-wrap" id="sortiment" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><h2 id="catalog-title">Hitta ditt mönster.</h2><p>Från den lilla börsen till hemmets favoritkudde.</p></div><p class="catalog-intro">Alla 15 kategorier samlade här.<br>Välj något du tycker om, så hjälper Christina dig vidare.</p></div>
+      <div class="catalog-layout">
+        <aside class="category-sidebar" aria-label="Produktkategorier"><h3>Sortiment</h3><div id="category-list"></div><div class="sidebar-note"><p>En annan färg?<br>Ett annat mått?</p><a href="mailto:bjorkagard711@telia.com">Fråga Christina</a></div></aside>
+        <div class="catalog-content">
+          <div class="catalog-toolbar"><div class="search-field"><label for="product-search">Sök i sortimentet</label><input id="product-search" type="search" placeholder="Till exempel Elefant, Josef Frank…" autocomplete="off"></div><div class="mobile-category"><label for="category-select">Kategori</label><select id="category-select"></select></div><div class="sort-field"><label for="product-sort">Sortera</label><select id="product-sort"><option value="featured">Favoriter</option><option value="price-low">Pris: lågt–högt</option><option value="price-high">Pris: högt–lågt</option><option value="name">Namn: A–Ö</option></select></div></div>
+          <div class="results-heading"><h3 id="results-title">Hela sortimentet</h3><span id="results-count" role="status" aria-live="polite"></span></div>
+          <p id="category-description" class="category-description" hidden></p>
+          <div class="product-grid" id="product-grid"></div>
+          <div class="empty-state" id="empty-state" hidden><h3>Inga träffar just nu.</h3><p>Prova ett annat mönster, en produkt eller visa hela sortimentet.</p><button class="button button-primary" id="reset-filters" type="button">Visa hela sortimentet</button></div>
+          <div class="load-more-wrap"><p id="shown-count"></p><button class="button button-outline" id="load-more" type="button">Visa fler produkter</button></div>
+          <p class="price-disclaimer">Priser och utföranden från Pions sortiment. Christina bekräftar aktuellt pris, tillgänglighet och frakt när du tar kontakt. Vissa bilder visar flera produkter eller olika varianter.</p>
+          <noscript><p>Aktivera JavaScript för att söka i katalogen, eller <a href="https://www.pionlindesberg.com/produkter">besök Pions ursprungliga sortiment</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="pattern-story" aria-labelledby="pattern-title"><div><h2 id="pattern-title">Lite mer färg.<br>Varje dag.</h2><p>Klassiska mönster får nytt liv som väskor, börsar och detaljer för hemmet. Bland tygerna finns favoriter från Svenskt Tenn, Josef Frank, Estrid Ericson, Stig Lindberg och Jobs.</p><a class="button button-light" href="#sortiment" data-category-link="vaeskor">Hitta en väska att tycka om</a></div><img src="assets/pion-ae584e743c12.jpg" alt="Färgglada handsydda tygkassar från Pion Design uppställda mot en röd trävägg" loading="lazy" width="1100" height="800"></section>
+
+    <section class="maker section-wrap" id="christina" aria-labelledby="maker-title"><figure><img src="assets/pion-7968bd7cc371.jpg" alt="Rosa pioner från Christinas egen bildsamling" loading="lazy" width="900" height="1000"><figcaption>En blomma. Ett namn. Massor av skaparlust.</figcaption></figure><div class="maker-copy"><h2 id="maker-title">Det är Christina<br>som syr.</h2><p class="large-copy">Bakom Pion Design finns Christina Bertholdson — och en kärlek till färg, form och fina tyger.</p><p>Christina syr själv produkterna i sortimentet. Här möts välkända mönster och personlig syglädje, i saker som får följa med genom vardagen.</p><p>Har du sett ett tyg du tycker om, eller behöver du ett annat mått? Produkterna kan också sys på beställning. Ta kontakt och berätta vad du har i tankarna.</p><a class="text-link" href="mailto:bjorkagard711@telia.com">Skriv till Christina</a><div class="maker-signature">Christina Bertholdson<span>Pion Design · Lindesberg</span></div></div></section>
+
+    <section class="order-section" id="bestallning" aria-labelledby="order-title"><div class="section-wrap"><div class="section-heading"><h2 id="order-title">Direkt från<br>hennes händer till dig.</h2><p>Du beställer personligen av Christina.<br>Enkelt, med utrymme för dina önskemål.</p></div><ol class="order-steps"><li><h3>Hitta något du gillar</h3><p>Utforska sortimentet och lägg dina favoriter i en förfrågan. Du kan också ringa eller mejla direkt.</p></li><li><h3>Prata med Christina</h3><p>Stäm av mönster, mått, pris och tillgänglighet. Frakten beräknas enligt Postens portotabell.</p></li><li><h3>Bekräfta din beställning</h3><p>När ni kommit överens betalar du med Swish till <a href="tel:+46705408449">070-540 84 49</a>, enligt Christinas instruktioner.</p></li></ol><div class="order-bottom"><a class="button button-primary" href="https://www.pionlindesberg.com/bestallning" target="_blank" rel="noopener">Till Christinas beställningsformulär</a><span>Du är också välkommen att ringa.</span></div></div></section>
+    <section class="contact section-wrap" aria-labelledby="contact-title"><div><h2 id="contact-title">Vad vill du<br>ha mer färg på?</h2><p>En fråga, en idé eller något du vill beställa.<br>Christina hjälper dig gärna.</p></div><div class="contact-links"><a href="tel:+46705408449">070-540 84 49</a><a href="mailto:bjorkagard711@telia.com">bjorkagard711@telia.com</a><div class="social-links"><a href="https://www.instagram.com/designpion/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/christina.bertholdson" target="_blank" rel="noopener">Facebook</a></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="footer-wordmark" href="#">Pion Design<span>Lindesberg</span></a><div><span>Handsytt av Christina Bertholdson</span><a href="https://www.pionlindesberg.com" target="_blank" rel="noopener">Besök den ursprungliga webbplatsen</a><small>Tyger och mönster tillhör respektive formgivare och varumärke.</small></div></footer>
+
+  <dialog id="product-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>En närmare titt</span><button type="button" class="close-button" data-close="product-dialog" aria-label="Stäng produktdetaljer">Stäng</button></div><div id="product-detail"></div></dialog>
+  <dialog id="inquiry-dialog" aria-labelledby="inquiry-title"><div class="dialog-top"><h2 id="inquiry-title">Din förfrågan</h2><button type="button" class="close-button" data-close="inquiry-dialog" aria-label="Stäng förfrågan">Stäng</button></div><div class="inquiry-body"><p>Samla det du tycker om och fråga Christina om pris, tillgänglighet och frakt.</p><div id="inquiry-items"></div><div id="inquiry-form"><label for="customer-name">Ditt namn <span>(valfritt)</span></label><input id="customer-name" autocomplete="name" placeholder="För- och efternamn"><label for="customer-message">Dina önskemål <span>(valfritt)</span></label><textarea id="customer-message" rows="3" placeholder="Till exempel ett annat mått eller mönster…"></textarea><button class="button button-primary" id="email-inquiry" type="button">Öppna förfrågan i mejl</button><button class="text-link" id="copy-inquiry" type="button">Kopiera förfrågan</button><p class="form-explanation">Ditt mejlprogram öppnas med förfrågan. Du skickar själv mejlet. Ingen beställning eller betalning görs på den här sidan.</p><p id="inquiry-status" role="status"></p><textarea id="copy-fallback" aria-label="Förfrågan att kopiera" readonly hidden rows="7"></textarea></div><a class="original-form-link" href="https://www.pionlindesberg.com/bestallning" target="_blank" rel="noopener">Använd Christinas beställningsformulär</a></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
